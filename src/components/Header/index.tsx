@@ -74,7 +74,8 @@ const Header = () => {
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
-                <button
+                {/* navbar hamburger menu */}
+                {/* <button
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
@@ -95,7 +96,7 @@ const Header = () => {
                       navbarOpen ? "top-[-8px] -rotate-45" : " "
                     }`}
                   />
-                </button>
+                </button> */}
                 <nav
                   id="navbarCollapse"
                   className={`navbar border-body-color/50 dark:border-body-color/20 dark:bg-dark absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
@@ -159,18 +160,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
-                  className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link>
                 <div>
                   <ThemeToggler />
                 </div>
